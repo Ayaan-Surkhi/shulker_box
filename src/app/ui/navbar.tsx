@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./styles/Navbar.module.scss";
 import Image from "next/image";
+import { VT323 } from "next/font/google";
 
 const links = [
   { href: "/blogs", label: "Blogs" },
@@ -12,6 +13,7 @@ const links = [
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(false);
+
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem("theme");
@@ -30,6 +32,7 @@ export default function Navbar() {
     window.localStorage.setItem("theme", nextTheme ? "dark" : "light");
     setIsDark(nextTheme);
   }
+
 
   return (
     <header className={styles.header}>

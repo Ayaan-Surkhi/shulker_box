@@ -1,8 +1,10 @@
-$background: #f5f7f7;
-$foreground: #18181b;
-$muted: #71717a;
-$border: #e4e4e7;
-$accent: #2563eb;
+// Liverpool FC
+$background: #fdf6f5;
+$foreground: #881337;
+$muted: #9f6b70;
+$border: #f3d8d6;
+$accent: #c8102e;
+$secondary: #0d9488;
 
 :root {
   --background: #{$background};
@@ -10,12 +12,15 @@ $accent: #2563eb;
   --muted: #{$muted};
   --border: #{$border};
   --accent: #{$accent};
+  --secondary: #{$secondary};
 }
 
+// Dark Mode: GSW
 :root.dark {
-  --background: #101113;
-  --foreground: #f4f4f5;
-  --muted: #a1a1aa;
-  --border: #27272a;
-  --accent: #60a5fa;
+  --background: #0f2347;
+  --foreground: #ffd154;
+  --muted: #8ea8d8;
+  --border: #1e3a6e;
+  --accent: #ffc72c;
+  --secondary: #38bdf8;
 }

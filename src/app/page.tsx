@@ -1,15 +1,21 @@
 import Link from "next/link";
 import styles from "./Home.module.scss";
+import { Gloock } from 'next/font/google';
+
+const gloock = Gloock({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function Home() {
   return (
     <main className={styles.pageShell}>
       <section className={styles.hero}>
-        <div className={styles.heroContent}>
+        <div className={`${styles.heroContent}`}>
           <h1>
             Hiya, I&apos;m Ayaan
             <br />
-            <span>Surkhi.</span>
+            Surkhi
           </h1>
           <p className={styles.heroCopy}>
             I&apos;m a mathematics and computing undergrad student at NIT Warangal. I like writing about creative coding, machine
