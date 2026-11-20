@@ -1,0 +1,85 @@
+.page {
+  width: min(100% - 3rem, 58rem);
+  margin: 0 auto;
+  padding: clamp(5rem, 12vw, 9rem) 0;
+}
+
+.header {
+  max-width: 45rem;
+  margin-bottom: 4rem;
+
+  .heading {
+    display: flex;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 1.5rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+
+.intro {
+  max-width: 34rem;
+  margin: 1.75rem 0 0;
+  color: var(--muted);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--accent);
+    color: var(--foreground);
+  }
+}
+
+.activeFilter {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.list {
+  display: grid;
+}
+
+.empty {
+  margin: 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100% - 2rem, 58rem);
+  }
+}

@@ -1,0 +1,44 @@
+.card {
+  display: block;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  transition: border-color 150ms ease, transform 150ms ease;
+
+  &:hover {
+    border-color: var(--accent);
+    transform: translateX(0.35rem);
+  }
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.7rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.1;
+}
+
+.description {
+  max-width: 40rem;
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  color: var(--accent);
+  font-size: 0.75rem;
+}

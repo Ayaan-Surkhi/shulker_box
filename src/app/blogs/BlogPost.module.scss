@@ -1,0 +1,72 @@
+.page {
+  width: min(100% - 3rem, 46rem);
+  margin: 0 auto;
+  padding: clamp(5rem, 12vw, 9rem) 0;
+}
+
+.back {
+  color: var(--accent);
+  font-size: 0.875rem;
+}
+
+.header {
+  padding: 4rem 0 3rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.description {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content {
+  color: var(--foreground);
+  font-size: 1.1rem;
+  line-height: 1.8;
+
+  h2 {
+    margin: 2.5rem 0 0.75rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  p {
+    margin: 0 0 1.5rem;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.tag {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100% - 2rem, 46rem);
+  }
+}
