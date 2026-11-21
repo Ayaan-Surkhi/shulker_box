@@ -3,6 +3,12 @@ import BlogFilters from "./BlogFilters";
 import styles from "./Blogs.module.scss";
 import { type BlogMeta } from "./types";
 // import { blog as welcomePost } from "./welcome-to-the-shulker-box/blog";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shulker Box | Ayaan Surkhi",
+  description: "Yayyy",
+};
 
 const posts: BlogMeta[] = [];
 

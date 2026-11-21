@@ -1,11 +1,17 @@
 import Link from "next/link";
 import styles from "./Home.module.scss";
 import { Gloock } from 'next/font/google';
+import type { Metadata } from "next";
 
 const gloock = Gloock({
   weight: '400',
   subsets: ['latin'],
 });
+
+export const metadata: Metadata = {
+  title: "Ayaan Surkhi | Personal Blog",
+  description: "Yayyy",
+};
 
 export default function Home() {
   return (

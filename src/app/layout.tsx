@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono, Afacad } from "next/font/google";
 import "../styles/globals.scss";
 import Navbar from "./ui/navbar";
@@ -7,11 +6,6 @@ const afacad = Afacad({
   variable: "--font-afacad",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "Ayaan Surkhi | Personal Blog",
-  description: "Yayyy",
-};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
