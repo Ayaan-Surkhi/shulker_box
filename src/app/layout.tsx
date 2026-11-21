@@ -13,8 +13,6 @@ export const metadata: Metadata = {
   description: "Yayyy",
 };
 
-
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
