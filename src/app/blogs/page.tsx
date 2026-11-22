@@ -1,15 +1,12 @@
 import BlogFilters from "./BlogFilters";
 import styles from "./Blogs.module.scss";
-import { type BlogMeta } from "./types";
-import { blog as fluidPost } from "./fluid-simulation/blog";
+import { posts } from "./posts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Shulker Box | Ayaan Surkhi",
   description: "Yayyy",
 };
-
-const posts: BlogMeta[] = [fluidPost];
 
 export default function BlogsPage() {
   return (

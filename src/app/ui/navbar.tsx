@@ -46,6 +46,9 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <Link href="/rss.xml" aria-label="Subscribe to the RSS feed">
+            feed
+          </Link>
           <button
             className={styles.themeToggle}
             type="button"
