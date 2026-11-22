@@ -109,7 +109,7 @@ export const eighth = `
   }
 `;
 
-export const ninth = `  // 2. advect density along velocity field
+export const ninth = `  // advect density along velocity field
   for (let i = 1; i < n - 1; i++) {
     for (let j = 1; j < n - 1; j++) {
       nextCells[i][j].d = cells[i][j].advect(cells);

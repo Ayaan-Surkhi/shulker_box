@@ -84,19 +84,19 @@ But How DO Fluid Simulations Work?</a>
             </p>
 
             <p>first equation: The velocity in neighbouring areas of a fluid cannot flow towards each other, or away from each other, otherwise 
-                it would mean that somewhere in the middle matter would either have to be created out of nothing or disappear into nothing essentially the equation makes sure that mass is conserved in the fluid
+                it would mean that somewhere in the middle matter would either have to be created out of nothing or disappear into nothing. Essentially the equation makes sure that mass is conserved in the fluid.
             </p>
 
-            <p>Second equation: It states that the acceleration of a fluid is dependent on its internal forces, including its pressure gradient(1st term) and viscosity (2nd term) and also on external forces on fluid (3rd term)  </p>
+            <p>Second equation: It states that the acceleration of a fluid is dependent on its internal forces, including its pressure gradient(1st term) and viscosity (2nd term) and also on external forces on fluid (3rd term).  </p>
             
             <p>
                 What we need to know here is that pressure moves from high pressure to low pressure, and viscosity is a measure of how much a fluid resists flow. The higher the viscosity, the more resistant the fluid is to flow.
-                In our example we ignore the viscosity term and the external forces term, so we are left with the pressure gradient term
+                In our example we ignore the viscosity term and the external forces term, so we are left with the pressure gradient term.
             </p>
 
             <h1>How to implement</h1>
-            <p>These equations lay some rules down for the simulation but are not enough for us to implement fluid simulation</p>
-            <p>The paper <a href="https://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf" target="_blank">Real-Time Fluid Dynamics for Games</a> by Jos Stam which was referenced in Gonkee&apos;s video gives us a way to implement in a way that is computationally efficient</p>
+            <p>These equations lay some rules down for the simulation but are not enough for us to implement fluid simulation.</p>
+            <p>The paper <a href="https://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf" target="_blank">Real-Time Fluid Dynamics for Games</a> by Jos Stam which was referenced in Gonkee&apos;s video gives us a way to implement in a way that is computationally efficient.</p>
         
             <p>There are 3 key things we need to implement</p>
             <ul>
@@ -134,11 +134,11 @@ But How DO Fluid Simulations Work?</a>
             <CodeBlock code={fourth} language="javascript" filename="sketch.js" />
             <p>
                 We define a function swapGrids that swaps the current and next state of the cells in the simulation. This is done to update the state of the simulation for the next frame.
-                We keep track of current and next state, as we would need the current state when trying to compute new densities in advection and diffusion
+                We keep track of current and next state, as we would need the current state when trying to compute new densities in advection and diffusion.
             </p>
 
             <h1>Diffusion</h1>
-            <p>Diffusion is where the properties of one part of the fluid spread on to the surrounding area, our goal is to make the properties of a particular cell equal to the average of the densities of the 4 surrounding cells</p>
+            <p>Diffusion is where the properties of one part of the fluid spread on to the surrounding area, our goal is to make the properties of a particular cell equal to the average of the densities of the 4 surrounding cells.</p>
             <CodeBlock code={fifth} language="javascript" filename="fluid.js" />
             
             <div aria-label="Diffusion equation">
@@ -156,8 +156,8 @@ But How DO Fluid Simulations Work?</a>
             </p>
 
             <h1>Advection</h1>
-            <p>Advection is the movement of attributes through the fluid following its velocity</p>
-            <p>The velocity of a particular cell will affect properties of the neighbourhood of cells to which it points</p>
+            <p>Advection is the movement of attributes through the fluid following its velocity.</p>
+            <p>The velocity of a particular cell will affect properties of the neighbourhood of cells to which it points.</p>
 
             <CodeBlock code={seventh} language="javascript" filename="fluid.js" />
             <CodeBlock code={eighth} language="javascript" filename="fluid.js" />
@@ -169,7 +169,7 @@ But How DO Fluid Simulations Work?</a>
 
 
             <p>
-                We then linearly interpolate around the four surrounding cells of the backtracked position to find the new density of the current cell we are on, and store it in the nextCells array  
+                We then linearly interpolate around the four surrounding cells of the backtracked position to find the new density of the current cell we are on, and store it in the nextCells array.
             </p>
 
             <p>
@@ -198,7 +198,7 @@ But How DO Fluid Simulations Work?</a>
 
             <p>
                 <br></br>
-                This calculates the difference in x velocities between two horizontal squares and difference betweeen y velocities of two vertical squares sums them up and then divides by 2
+                This calculates the difference in x velocities between two horizontal squares and difference betweeen y velocities of two vertical squares sums them up and then divides by 2.
             </p>
 
             <p> 
@@ -211,7 +211,7 @@ But How DO Fluid Simulations Work?</a>
             <p>
                 <br></br>
                 We now have a field of p values, which is a scalar field, and we find gradient vector field of this field
-                The curl of such a gradient vector field is always 0 according to calculus, and we subtract this gradient vector field from the original velocity field to get a divergence free velocity field
+                The curl of such a gradient vector field is always 0 according to calculus, and we subtract this gradient vector field from the original velocity field to get a divergence free velocity field.
                 <br></br>
             </p>
 

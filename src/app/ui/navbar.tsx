@@ -4,11 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./styles/Navbar.module.scss";
 import Image from "next/image";
-import { VT323 } from "next/font/google";
 
 const links = [
   { href: "/blogs", label: "Blogs" },
-  // { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -47,13 +46,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://github.com/Ayaan-Surkhi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
           <button
             className={styles.themeToggle}
             type="button"
