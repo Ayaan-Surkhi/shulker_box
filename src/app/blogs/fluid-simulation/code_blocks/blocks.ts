@@ -171,8 +171,8 @@ export const thirteenth = `
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       let d = constrain(cells[i][j].d, 0, 1);
-      let alpha = pow(d, 0.75) * 255;
-      fill(16, 36, 110, alpha);
+      let alph = pow(d, 0.75) * 255;
+      fill(16, 36, 110, alph);
       rect(i * cellSize, j * cellSize, cellSize, cellSize);
   }
   }`;
