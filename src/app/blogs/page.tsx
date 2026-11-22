@@ -1,8 +1,7 @@
-import Image from "next/image";
 import BlogFilters from "./BlogFilters";
 import styles from "./Blogs.module.scss";
 import { type BlogMeta } from "./types";
-// import { blog as welcomePost } from "./welcome-to-the-shulker-box/blog";
+import { blog as fluidPost } from "./fluid-simulation/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
   description: "Yayyy",
 };
 
-const posts: BlogMeta[] = [];
+const posts: BlogMeta[] = [fluidPost];
 
 export default function BlogsPage() {
   return (

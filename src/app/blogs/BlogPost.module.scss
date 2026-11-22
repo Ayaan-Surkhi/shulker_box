@@ -1,16 +1,21 @@
 .page {
+  position: relative;
   width: min(100% - 3rem, 46rem);
   margin: 0 auto;
-  padding: clamp(5rem, 12vw, 9rem) 0;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0;
 }
 
 .back {
+  position: absolute;
+  top: clamp(1.5rem, 3vw, 2.5rem);
+  left: 0;
+  display: inline-block;
   color: var(--accent);
   font-size: 0.875rem;
 }
 
 .header {
-  padding: 4rem 0 3rem;
+  padding: 2.75rem 0 2.25rem;
 }
 
 .meta {
@@ -36,7 +41,7 @@
 }
 
 .content {
-  color: var(--foreground);
+  color: var(--text);
   font-size: 1.1rem;
   line-height: 1.8;
 
@@ -48,6 +53,40 @@
 
   p {
     margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: rgb(0, 170, 255);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  ul {
+    margin-top: -20px;
+
+    li {
+      font-size: 1.5rem;
+    }
+  }
+
+  .code_box {
+    font-size: 1rem;
+    background: rgb(91, 91, 91);
+    padding: .2rem;
+    color: #fff;
+  }
+
+  .katex {
+    margin: 10rem;
   }
 }
 

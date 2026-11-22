@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import BlogCard from "./BlogCard";
 import { blogCategories, type BlogCategory, type BlogMeta } from "./types";
@@ -32,6 +33,9 @@ export default function BlogFilters({ posts }: { posts: BlogMeta[] }) {
             {category}
           </button>
         ))}
+        <Link className={styles.filter} href="/blogs/fluid-simulation">
+          Fluid Simulation
+        </Link>
       </div>
       <section className={styles.list} aria-label="Blog posts">
         {filteredPosts.length > 0 ? (

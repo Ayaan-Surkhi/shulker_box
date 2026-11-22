@@ -38,7 +38,7 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav} aria-label="Main navigation">
         <Link className={styles.brand} href="/">
-          <Image src="./lime_shulker.svg" alt="Shulker Box Logo" width={32} height={32} />
+            <Image src="/lime_shulker.svg" alt="Shulker Box Logo" width={32} height={32} />
           <span>Shulker Box </span>
         </Link>
         <div className={styles.links}>
