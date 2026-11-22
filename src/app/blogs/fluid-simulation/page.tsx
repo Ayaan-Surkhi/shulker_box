@@ -33,7 +33,7 @@ export default function FluidSimulation() {
             <p>
                 It is very fascinating to see how physical pheonomenon in our world take place.
                 Fluid simulation is something I came across in <a href="https://www.youtube.com/watch?v=alhpH6ECFvQ" target="_blank">Coding Channel 132</a>,
-                the video was really fun, but I ended up implementing in a slighly different way as to what was in the video.
+                the video was really fun, but I ended up implementing it in a slighly different way as to what was in the video.
             </p>
 
             <p>
