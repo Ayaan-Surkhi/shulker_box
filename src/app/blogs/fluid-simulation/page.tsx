@@ -247,6 +247,10 @@ But How DO Fluid Simulations Work?</a>
             </p>
 
             <p>
+                Another thing to note is optimization, a cool way suggested by a <a href="https://mukesh.0xc84.fyi/" target="_blank">friend</a> was to use createGraphics to create a buffer off-screen, and then bulk updating.
+            </p>
+
+            <p>
                 I hope this was helpful for anyone trying to implement fluid simulation, if there are any suggestions or improvements to be made to the article, <Link href='/contact'> let me know! </Link>
             </p>
 
