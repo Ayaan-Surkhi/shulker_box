@@ -33,9 +33,7 @@ export default function BlogFilters({ posts }: { posts: BlogMeta[] }) {
             {category}
           </button>
         ))}
-        <Link className={styles.filter} href="/blogs/fluid-simulation">
-          Fluid Simulation
-        </Link>
+
       </div>
       <section className={styles.list} aria-label="Blog posts">
         {filteredPosts.length > 0 ? (
