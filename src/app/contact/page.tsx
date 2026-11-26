@@ -13,7 +13,7 @@ export default function ContactPage() {
         <h1 id="contact-heading">Contact</h1>
 
         <div className={styles.links}>
-          <a className={styles.link} href="mailto:ayaansurkhi.work@gmail.com">
+          <a className={styles.link} href="#">
             <span className={styles.label}>Email</span>
             <span 
               className={styles.value}
